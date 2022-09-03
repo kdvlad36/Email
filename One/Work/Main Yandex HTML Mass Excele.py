@@ -15,8 +15,8 @@ for i in range(1, sheet.max_row+1):
     # desk_email = cell_obj.value
 
     addr_to = desk_email
-    addr_from = "wtile.info@yandex.ru"                 # Адресат                   # Получатель
-    password  = "fhqfgletedtmheao"                                  # Пароль
+    addr_from = ""                 # Адресат                   # Получатель
+    password  = ""                                  # Пароль
     msg = MIMEMultipart()                               # Создаем сообщение
     msg['From']    = addr_from                          # Адресат
     msg['To']      = addr_to                            # Получатель
