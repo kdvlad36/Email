@@ -7,9 +7,9 @@ from email.mime.image import MIMEImage              # Изображения
 with open("email_template.html") as file:
     html = file.read()
 
-addr_from = "wtile.info@yandex.ru"                 # Адресат
-addr_to   = "wtile.info@yandex.ru"                   # Получатель
-password  = "fhqfgletedtmheao"                                  # Пароль
+addr_from = ""                 # Адресат
+addr_to   = ""                   # Получатель
+password  = ""                                  # Пароль
 
 msg = MIMEMultipart()                               # Создаем сообщение
 msg['From']    = addr_from                          # Адресат
