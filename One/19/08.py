@@ -14,7 +14,7 @@ email = []
 for j in range(1, sh.max_column+1):
     addr_to = j
     addr_from = "wtile.info@yandex.ru"                 # Адресат                   # Получатель
-    password  = "fhqfgletedtmheao"                                  # Пароль
+    password  = ""                                  # Пароль
     msg = MIMEMultipart()                               # Создаем сообщение
     msg['From']    = addr_from                          # Адресат
     msg['To']      = j                            # Получатель
