@@ -1,14 +1,3 @@
-'''
-Спам-машина :) Адреса для рассылки хранятся в Excel-файле в колонках:
-А - адрес почты
-В - пароль доступа к ней
-
-Адреса получателей - в текстовом файле.
-Алгоритм работы:
-1. Получаем из Excel-файла связку: логин-пароль
-2. Берем адрес из списка отправителей, и отправляем письмо на него. После отправки адрес получателя удаляется из списка
-
-'''
 
 import openpyxl
 import random
@@ -37,8 +26,8 @@ def send_email():
 			with open("email_template.html") as file:
 				html = file.read()
 				
-			addr_from = "wtile.info@yandex.ru"                 # Адресат                   # Получатель
-			password  = "fhqfgletedtmheao"                                  # Пароль
+			addr_from = ""                 # Адресат                   # Получатель
+			password  = ""                                  # Пароль
 			msg = MIMEMultipart()                               # Создаем сообщение
 			msg['From']    = addr_from                          # Адресат
 			msg['To']      = addr_to                            # Получатель
